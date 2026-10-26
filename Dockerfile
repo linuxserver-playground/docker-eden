@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-selkies:debiantrixie AS buildstage
+FROM ghcr.io/linuxserver-playground/baseimage-selkies:debiantrixie AS buildstage
 
 ARG EDEN_VERSION
 
@@ -110,7 +110,7 @@ RUN \
 
 
 # Runtime Stage
-FROM ghcr.io/linuxserver/baseimage-selkies:debiantrixie
+FROM ghcr.io/linuxserver-playground/baseimage-selkies:debiantrixie
 
 # set version label
 ARG BUILD_DATE
