@@ -11,6 +11,15 @@ upstream:
     type: json
     url: https://git.eden-emu.dev/api/v1/repos/eden-emu/eden/releases/latest
     jq: .tag_name
+  notes:
+    type: gitea_release
+    base_url: https://git.eden-emu.dev
+    repo: eden-emu/eden
+  sponsor:
+  - name: Contribute page (Liberapay, PayPal, Bitcoin)
+    url: https://eden-emu.dev/contribute
+  - name: Liberapay (crueter, Eden developer)
+    url: https://liberapay.com/crueter
 
 release:
   branch: master
